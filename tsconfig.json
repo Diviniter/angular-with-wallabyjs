@@ -4,8 +4,7 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "paths": {
-      "@dd/*": ["src/*"],
-      "@yuc/*": ["projects/yuc-funnel/src/*"]
+      "@dd/*": ["src/*"]
     },
     "sourceMap": true,
     "declaration": false,

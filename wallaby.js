@@ -11,7 +11,7 @@ module.exports = function (wallaby) {
     entryPatterns: [
       'src/wallabyTest.js',
       'src/**/*spec.js',
-      'projects/**/*spec.js'
+      // 'projects/**/*spec.js'
     ],
 
     module: {
@@ -28,7 +28,7 @@ module.exports = function (wallaby) {
       modules: [
         path.join(wallaby.projectCacheDir, 'src/app'),
         path.join(wallaby.projectCacheDir, 'src'),
-        path.join(wallaby.projectCacheDir, 'projects'),
+        // path.join(wallaby.projectCacheDir, 'projects'),
         'node_modules'
       ]
     },
@@ -43,15 +43,15 @@ module.exports = function (wallaby) {
   return {
     files: [
       {pattern: 'src/**/*.+(ts|css|less|scss|sass|styl|html|json|svg)', load: false},
-      {pattern: 'projects/**/*.+(ts|css|less|scss|sass|styl|html|json|svg)', load: false},
+      // {pattern: 'projects/**/*.+(ts|css|less|scss|sass|styl|html|json|svg)', load: false},
       {pattern: 'src/**/*.d.ts', ignore: true},
       {pattern: 'src/**/*spec.ts', ignore: true},
-      {pattern: 'projects/**/*spec.ts', ignore: true}
+      // {pattern: 'projects/**/*spec.ts', ignore: true}
     ],
 
     tests: [
       {pattern: 'src/**/*spec.ts', load: false},
-      {pattern: 'projects/**/*spec.ts', load: false},
+      // {pattern: 'projects/**/*spec.ts', load: false},
       {pattern: 'src/**/*e2e-spec.ts', ignore: true}
     ],
 

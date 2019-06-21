@@ -1,4 +1,4 @@
-import { IconUrlGeneratorService } from "@dd/app/url-icon-generator.service";
+import { IconUrlGeneratorService } from "@dd/../../app/url-icon-generator.service";
 
 describe('IconUrlGeneratorService', () => {
     let iconUrlGeneratorService: IconUrlGeneratorService;
